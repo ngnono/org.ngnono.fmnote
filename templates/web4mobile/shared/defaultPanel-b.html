@@ -1,0 +1,36 @@
+<div id="nav-right-panel" data-role="panel" data-position-fixed="true" data-position="right">
+    {% if request.user.is_authenticated %}
+        <ul data-role="listview" data-inset="true">
+            <li>欢迎您:{{ request.user.username }}</li>
+            <li><a href="{% url 'apps.account.views.logout_view' %}">注销</a></li>
+        </ul>
+    {% else %}
+        <form method="POST" action="{% url 'apps.account.views.login_view' %}">
+            {% csrf_token %}
+            <ul data-role="listview" data-inset="true">
+                <li data-role="fieldcontain">
+
+                    <label for="txtUsername">用户名</label>
+                    <input type="text" name="username" id="txtUsername"/>
+                </li>
+
+                <li data-role="fieldcontain">
+
+                    <label for="txtPassword">密码</label>
+                    <input type="text" name="password" id="txtPassword"/>
+                </li>
+
+                <li>
+
+                    <button type="submit">登录</button>
+
+                </li>
+                <li>
+
+                    <button type="submit">注册</button>
+
+                </li>
+            </ul>
+        </form>
+    {% endif %}
+</div>

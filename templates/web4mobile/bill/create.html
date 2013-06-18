@@ -1,0 +1,120 @@
+{% extends "web4mobile/base.html" %}
+
+
+{% block content %}
+    <form method="POST">
+        {{ csrf_token }}
+        <ul data-role="listview" data-inset="true">
+            <li data-role="fieldcontain">
+                <label for="txtTitle" class="select">类型</label>
+                <select name="type" id="slctType">
+                    <option value="1">支出</option>
+                    <option value="2">收入</option>
+                </select>
+            </li>
+
+            <li data-role="fieldcontain">
+
+                <label for="txtTitle">标题</label>
+                <input type="text" name="title" id="txtTitle"/>
+            </li>
+
+            <li data-role="fieldcontain">
+
+                <label for="txtDescription">说明</label>
+                <textarea cols="40" rows="8" name="description" id="txtDescription"></textarea>
+            </li>
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">分类</li>
+
+            <li>
+                <a href="#nav-category-panel" data-icon="bars">--</a>
+            </li>
+
+            <li data-role="list-divider">标记</li>
+
+            <li>
+                <a href="#nav-tag-panel" data-icon="bars">--</a>
+            </li>
+
+        </ul>
+        <ul data-role="listview" data-inset="true">
+            <li data-role="fieldcontain">
+
+                <label for="txtDate">日期</label>
+                <input type="text" name="entryDate" id="txtDate" class="i-txt"/>
+            </li>
+
+            <li data-role="fieldcontain">
+
+                <label for="txtPrice">金额</label>
+                <input type="text" name="price" id="txtPrice"/>
+            </li>
+
+
+            <li class="ui-body ui-bar-b">
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-b">
+                        <button type="submit">保存</button>
+                    </div>
+                </fieldset>
+            </li>
+        </ul>
+    </form>
+{% endblock %}
+
+{% block customHomeArea %}
+    <div data-role="panel" id="nav-category-panel" data-position-fixed="true" data-position="right">
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#">编辑</a></li>
+        </ul>
+        <ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true"
+            data-filter-placeholder="分类">
+            <li><a href="#">女装</a></li>
+        </ul>
+    </div>
+
+    <div data-role="panel" id="nav-tag-panel" data-position-fixed="true" data-position="right">
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#">编辑</a></li>
+        </ul>
+        <ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true"
+            data-filter-placeholder="标记">
+            <li><a href="#">女装</a></li>
+        </ul>
+    </div>
+
+
+
+{% endblock %}
+
+{% block headStyle %}
+    <link rel="stylesheet" href="/static/css/widget/mobiscroll.custom-2.5.4.min.css">
+{% endblock %}
+
+{% block headJs %}
+    <script type="text/javascript" src="/static/js/widget/mobiscroll.custom-2.5.4.min.js"></script>
+{% endblock %}
+
+{% block footerJs %}
+
+    <script type="text/javascript">
+
+        function pageInit() {
+            $('#txtDate').mobiscroll().date({
+                theme: 'jqm',
+                display: 'inline',
+                mode: 'scroller',
+                dateOrder: 'mmD ddyy'
+            });
+
+            $('#txtDate').mobiscroll('setValue', '{{ entryDate }}', true)
+        }
+
+
+        $('#home').bind('pageinit', pageInit);
+
+
+    </script>
+{% endblock %}

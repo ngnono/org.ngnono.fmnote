@@ -15,5 +15,10 @@ urlpatterns = patterns('',
 
                        # Uncomment the next line to enable the admin:
                        url(r'^admin/', include(admin.site.urls)),
-                       url(r'^bill/', include('apps.bill.urls'))
+                       url(r'^bill/', include('apps.bill.urls')),
+                       url(r'^account/', include('apps.account.urls')),
+                       url(r'^category/', include('apps.category.urls')),
+                       #url(r'^tag/', include('apps.tag.urls')),
+                       url(r'^api/', include('rest_framework.urls', namespace='rest_framework'))
 )
+

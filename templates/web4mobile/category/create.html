@@ -2,21 +2,17 @@
 
 
 {% block content %}
-    <form method="POST">
+    <form method="POST" action="{% url 'apps.category.views.create' %}">
         {{ csrf_token }}
+        {% if form.errors %}
+            {{ form.errors }}
+        {% endif %}
         <ul data-role="listview" data-inset="true">
-            <li data-role="fieldcontain">
-                <label for="txtTitle" class="select">类型</label>
-                <select name="type" id="slctType">
-                    <option value="1">支出</option>
-                    <option value="2">收入</option>
-                </select>
-            </li>
 
             <li data-role="fieldcontain">
 
-                <label for="txtTitle">标题</label>
-                <input type="text" name="title" id="txtTitle"/>
+                <label for="txtName">名称</label>
+                <input type="text" name="name" id="txtName"/>
             </li>
 
             <li data-role="fieldcontain">
@@ -24,35 +20,24 @@
                 <label for="txtDescription">说明</label>
                 <textarea cols="40" rows="8" name="description" id="txtDescription"></textarea>
             </li>
-        </ul>
-        <ul data-role="listview" data-inset="true">
-            <li data-role="list-divider">分类</li>
 
-            <li>
-                <a href="#nav-category-panel" data-icon="bars">--</a>
-            </li>
+            <li data-role="fieldcontain">
 
-            <li data-role="list-divider">标记</li>
-
-            <li>
-                <a href="#nav-tag-panel" data-icon="bars">--</a>
+                <label for="txtType">类型</label>
+                <textarea cols="40" rows="8" name="type" id="txtType"></textarea>
             </li>
 
         </ul>
         <ul data-role="listview" data-inset="true">
-            <li data-role="fieldcontain">
+            <li data-role="list-divider">父类</li>
 
-                <label for="txtDate">日期</label>
-                <input type="text" name="entryDate" id="txtDate" class="i-txt"/>
+            <li>
+                <a href="#nav-category-panel" data-icon="bars" id="aPrentId">--</a>
             </li>
 
-            <li data-role="fieldcontain">
+        </ul>
 
-                <label for="txtPrice">金额</label>
-                <input type="text" name="price" id="txtPrice"/>
-            </li>
-
-
+        <ul data-role="listview" data-inset="true">
             <li class="ui-body ui-bar-b">
                 <fieldset class="ui-grid-a">
                     <div class="ui-block-b">
@@ -61,6 +46,7 @@
                 </fieldset>
             </li>
         </ul>
+        <input type="hidden" id="hidPrentId" name="prentid"/>
     </form>
 {% endblock %}
 
@@ -71,45 +57,18 @@
         </ul>
         <ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true"
             data-filter-placeholder="分类" id="ul-category-list">
-            <li><a href="#">女装</a></li>
-        </ul>
-    </div>
-
-    <div data-role="panel" id="nav-tag-panel" data-position-fixed="true" data-position="right">
-        <ul data-role="listview" data-inset="true">
-            <li><a href="#">编辑</a></li>
-        </ul>
-        <ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true"
-            data-filter-placeholder="标记" id="ul-tag-list">
-            <li><a href="#">女装</a></li>
         </ul>
     </div>
 
 
-
 {% endblock %}
 
-{% block headStyle %}
-    <link rel="stylesheet" href="/static/css/widget/mobiscroll.custom-2.5.4.min.css">
-{% endblock %}
-
-{% block headJs %}
-    <script type="text/javascript" src="/static/js/widget/mobiscroll.custom-2.5.4.min.js"></script>
-{% endblock %}
 
 {% block footerJs %}
 
     <script type="text/javascript">
 
         function pageInit() {
-            $('#txtDate').mobiscroll().date({
-                theme: 'jqm',
-                display: 'inline',
-                mode: 'scroller',
-                dateOrder: 'mmD ddyy'
-            });
-
-            $('#txtDate').mobiscroll('setValue', '{{ entryDate }}', true);
 
             $('#ul-category-list').on('listviewbeforefilter', function (e, data) {
                 var $ul = $(this), $input = $(data.input), value = $input.val(), html = '';
@@ -127,7 +86,7 @@
                         },
                         success: function (response) {
                             $.each(response, function (i, val) {
-                                html += '<li><a href="#">' + val.Name + '</a></li>';
+                                html += '<li><a href="javascript:void(0)" onclick="bindPrentId(' + val.Id + ',$(this).html())" title="' + val.Description + '">' + val.Name + '</a></li>';
                             });
                             $ul.html(html);
                             $ul.listview("refresh");
@@ -140,6 +99,11 @@
 
                 }
             });
+        }
+
+        function bindPrentId(id, name) {
+            $('#hidPrentId').html(id);
+            $('#aPrentId').html(name);
         }
 
         $('#home').bind('pageinit', pageInit);

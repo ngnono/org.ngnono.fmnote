@@ -26,4 +26,4 @@ class DataBaseEntity(BaseEntity):
 
 
 class EnumBase(object):
-    pass;
+    pass

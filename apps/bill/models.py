@@ -1,4 +1,6 @@
 # -*- coding:utf-8 -*-
+from apps.category.models import CategoryEntity
+
 __author__ = 'ngnono'
 
 from django.db import models
@@ -16,18 +18,6 @@ class UserProfile(DataBaseEntity):
     class Meta:
         db_table = "UserProfile"
 
-
-class CategoryEntity(DataBaseEntity):
-    Name = models.CharField(max_length=64)
-    Description = models.TextField()
-    PrentId = models.IntegerField()
-    Level = models.IntegerField()
-    Type = models.IntegerField()
-
-    User = models.OneToOneField(User)
-
-    class Meta:
-        db_table = "Category"
 
 
 class TagEntity(DataBaseEntity):

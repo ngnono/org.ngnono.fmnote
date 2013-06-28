@@ -25,10 +25,20 @@ def create(request):
     #     form.save()
     #     form = BillForm()
 
+    if request.method == "GET":
+        return create_get(request)
 
+    return create_post(request)
+
+
+def create_get(request):
     entryDate = time.strftime('%m/%d/%Y', time.localtime(time.time()))
     homeHeaderTitle = entryDate
     return render_to_response("web4mobile/bill/create.html", locals())
+
+
+def create_post(request):
+    pass
 
 
 def list(request):

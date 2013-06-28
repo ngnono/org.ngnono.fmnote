@@ -5,6 +5,7 @@ __author__ = 'ngnono'
 
 # string processing
 
+
 def anyTrue(predicate, sequence):
     return True in itertools.imap(predicate, sequence)
 
@@ -21,4 +22,5 @@ def isNoneOrEmpty(s):
         return True
 
     return False
+
 

@@ -14,14 +14,9 @@ from apps.category.views import *
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-                       # Examples:
-                       # url(r'^$', 'fmnote.views.home', name='home'),
-                       # url(r'^fmnote/', include('fmnote.foo.urls')),
-
-                       # Uncomment the admin/doc line below to enable admin documentation:
-                       # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-                       # Uncomment the next line to enable the admin:
-                       # url(r'^admin/', include(admin.site.urls)),
-                       url(r'^list/$', list),
-                       )
+                       url(r'^list/$', getlist),
+                       url(r'^create/$', create),
+                       url(r'^del/$', delete),
+                       url(r'^update/$', update),
+                       url(r'^detail/$', detail),
+)

@@ -27,3 +27,20 @@ class DataBaseEntity(BaseEntity):
 
 class EnumBase(object):
     pass
+
+
+class ExecStatus(object):
+    Success = 200
+    ClientError = 410
+    ServerError = 500
+
+
+class ExecResult(object):
+    def __init__(self, *args, **kwargs):
+        self.status = kwargs["status"]
+        self.msg = kwargs["msg"]
+        self.data = args
+        self.isSuccess = self.status == 200
+
+    class Meta:
+        pass

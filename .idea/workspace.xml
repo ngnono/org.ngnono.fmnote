@@ -2,37 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc8a14e-e12e-420c-b21a-3e14cab7d683" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web4mobile/category/create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/category/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/category/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/category/serializer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/common/serializer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/web4mobile/category/update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/common/wrapper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/admin/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/common/middlewares/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/test/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/common/middlewares/csrfMiddleware.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/common/middlewares/debugMiddleware.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/test/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/test/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/ngnonofm.sqlite3" afterPath="$PROJECT_DIR$/db/ngnonofm.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web4mobile/bill/create.html" afterPath="$PROJECT_DIR$/templates/web4mobile/bill/create.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/bill/models.py" afterPath="$PROJECT_DIR$/apps/bill/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/bill/admin.py" afterPath="$PROJECT_DIR$/apps/bill/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web4mobile/base.html" afterPath="$PROJECT_DIR$/templates/web4mobile/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/web4mobile/category/create.html" afterPath="$PROJECT_DIR$/templates/web4mobile/category/create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/category/forms.py" afterPath="$PROJECT_DIR$/apps/category/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/common/models.py" afterPath="$PROJECT_DIR$/apps/common/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/common/serializer.py" afterPath="$PROJECT_DIR$/apps/common/serializer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings/local/settings.py" afterPath="$PROJECT_DIR$/settings/local/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/category/urls.py" afterPath="$PROJECT_DIR$/apps/category/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings/local/urls.py" afterPath="$PROJECT_DIR$/settings/local/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/common/utils.py" afterPath="$PROJECT_DIR$/apps/common/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/bill/views.py" afterPath="$PROJECT_DIR$/apps/bill/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/account/views.py" afterPath="$PROJECT_DIR$/apps/account/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/category/views.py" afterPath="$PROJECT_DIR$/apps/category/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/common/wrapper.py" afterPath="$PROJECT_DIR$/apps/common/wrapper.py" />
     </list>
     <ignored path="org.ngnono.fmnote.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372318135635" ignored="false" />
-    <file path="/settings.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372217381191" ignored="false" />
-    <file path="/models.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372067990029" ignored="false" />
+    <file path="/Dummy.txt" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1376968224861" ignored="false" />
+    <file path="/settings.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1376055378552" ignored="false" />
+    <file path="/models.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372563310340" ignored="false" />
     <file path="/manage.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1370334898308" ignored="false" />
-    <file path="/urls.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371712553175" ignored="false" />
-    <file path="/a.dummy" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371117542315" ignored="false" />
-    <file path="/base.html" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371547265008" ignored="false" />
+    <file path="/urls.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1375867052233" ignored="false" />
+    <file path="/a.dummy" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372997858181" ignored="false" />
+    <file path="/base.html" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372927699742" ignored="false" />
     <file path="/index.html" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371454650399" ignored="false" />
-    <file path="/views.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372328139140" ignored="false" />
-    <file path="/forms.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372401459678" ignored="false" />
-    <file path="/utils.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371715593648" ignored="false" />
+    <file path="/views.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1376379004161" ignored="false" />
+    <file path="/forms.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372781249078" ignored="false" />
+    <file path="/utils.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1374219954414" ignored="false" />
     <file path="/tests.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371118412202" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.6.xsd" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371287162633" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.5.xsd" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371287162634" ignored="false" />
@@ -150,10 +156,10 @@
     <file path="$APPLICATION_HOME_DIR$/plugins/weblogicIntegration/lib/weblogicIntegration.jar!/res/v12/weblogic-web-app_1_4.xsd" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371287162642" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.7.xsd" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371287162642" ignored="false" />
     <file path="/defaultRightPannel.html" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371456424640" ignored="false" />
-    <file path="/create.html" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372328867402" ignored="false" />
+    <file path="/create.html" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1373105802471" ignored="false" />
     <file path="/defaultPanel-b.html" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371550933006" ignored="false" />
-    <file path="/serializer.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372063023619" ignored="false" />
-    <file path="/wrapper.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1371786014514" ignored="false" />
+    <file path="/serializer.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372563615143" ignored="false" />
+    <file path="/wrapper.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1376054554838" ignored="false" />
     <file path="/update.html" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372068463617" ignored="false" />
     <file path="$PROJECT_DIR$/../../solr-4.3.1/maven-build/solr/contrib/velocity/pom.xml" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372403677756" ignored="false" />
     <file path="$PROJECT_DIR$/../../solr-4.3.1/maven-build/solr/contrib/uima/pom.xml" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372403677756" ignored="false" />
@@ -205,6 +211,13 @@
     <file path="$PROJECT_DIR$/../../solr-4.3.1/maven-build/lucene/queries/pom.xml" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372403677759" ignored="false" />
     <file path="$PROJECT_DIR$/../../solr-4.3.1/maven-build/lucene/facet/pom.xml" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372403677760" ignored="false" />
     <file path="$PROJECT_DIR$/../../solr-4.3.1/maven-build/pom.xml" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372404166079" ignored="false" />
+    <file path="/debugMiddleware.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372909065589" ignored="false" />
+    <file path="/csrfMiddleware.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1372998809463" ignored="false" />
+    <file path="$USER_HOME$/Downloads/untitled/.idea/workspace.xml" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1373005685834" ignored="false" />
+    <file path="$USER_HOME$/Downloads/untitled/.idea/compiler.xml" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1373005685834" ignored="false" />
+    <file path="/Python Script.txt.ft" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1375758972163" ignored="false" />
+    <file path="/admin.py" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1375759166232" ignored="false" />
+    <file path="$PROJECT_DIR$/../temp/.idea/workspace.xml" changelist="0dc8a14e-e12e-420c-b21a-3e14cab7d683" time="1376387039526" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +277,55 @@
     <favorites_list name="org.ngnono.fmnote" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings/local/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="118" column="0" selection-start="4038" selection-end="4038" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/account/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/account/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="9" selection-start="205" selection-end="205" vertical-scroll-proportion="0.23404256">
+              <folding>
+                <element signature="e#23#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/bill/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="22" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wrapper.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/common/wrapper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="28" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -284,22 +345,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/apps/common/serializer.py" />
-        <option value="$PROJECT_DIR$/apps/bill/views.py" />
-        <option value="$PROJECT_DIR$/apps/common/utils.py" />
-        <option value="$PROJECT_DIR$/templates/web4mobile/bill/create.html" />
-        <option value="$PROJECT_DIR$/apps/category/urls.py" />
-        <option value="$PROJECT_DIR$/apps/common/wrapper.py" />
-        <option value="$PROJECT_DIR$/apps/common/models.py" />
-        <option value="$PROJECT_DIR$/apps/category/serializer.py" />
-        <option value="$PROJECT_DIR$/templates/web4mobile/category/update.py" />
-        <option value="$PROJECT_DIR$/templates/web4mobile/category/update.html" />
-        <option value="$PROJECT_DIR$/settings/local/settings.py" />
-        <option value="$PROJECT_DIR$/apps/category/models.py" />
-        <option value="$PROJECT_DIR$/apps/bill/models.py" />
+        <option value="$PROJECT_DIR$/apps/common/middlewares/debugMiddleware.py" />
+        <option value="$PROJECT_DIR$/templates/web4mobile/base.html" />
+        <option value="/Library/Python/2.7/site-packages/django/middleware/csrf.py" />
+        <option value="$PROJECT_DIR$/apps/common/middlewares/csrfMiddleware.py" />
         <option value="$PROJECT_DIR$/apps/category/views.py" />
         <option value="$PROJECT_DIR$/templates/web4mobile/category/create.html" />
+        <option value="$PROJECT_DIR$/apps/common/utils.py" />
         <option value="$PROJECT_DIR$/apps/category/forms.py" />
+        <option value="$PROJECT_DIR$/apps/admin.py" />
+        <option value="$PROJECT_DIR$/apps/bill/admin.py" />
+        <option value="$PROJECT_DIR$/apps/test/views.py" />
+        <option value="$PROJECT_DIR$/settings/local/urls.py" />
+        <option value="$PROJECT_DIR$/apps/test/urls.py" />
+        <option value="$PROJECT_DIR$/apps/common/wrapper.py" />
+        <option value="$PROJECT_DIR$/settings/local/settings.py" />
+        <option value="$PROJECT_DIR$/apps/account/views.py" />
       </list>
     </option>
   </component>
@@ -358,6 +419,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -389,20 +452,6 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.ngnono.fmnote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.ngnono.fmnote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web4mobile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -418,15 +467,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web4mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
+              <option name="myItemId" value="extras" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -440,7 +481,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="settings" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -472,14 +513,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,18 +528,18 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.scala.compiler.ScalaApplicationSettingsForm" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/solr-4.3.1/parent.iml" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.37935174" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -515,11 +554,11 @@
       <recent name="$PROJECT_DIR$/templates/web4mobile/category" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/bill" />
+      <recent name="$PROJECT_DIR$/apps/admin" />
+      <recent name="$PROJECT_DIR$/apps/common/middlewares" />
+      <recent name="$PROJECT_DIR$/apps/common" />
       <recent name="$PROJECT_DIR$/static/css/base" />
-      <recent name="$PROJECT_DIR$/static/js/base" />
-      <recent name="$PROJECT_DIR$/templates/web4mobile" />
-      <recent name="$PROJECT_DIR$/settings/local" />
-      <recent name="$PROJECT_DIR$/apps" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.org.ngnono.fmnote">
@@ -527,14 +566,6 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -550,6 +581,35 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="org.ngnono.fmnote" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
@@ -573,25 +633,17 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <module name="org.ngnono.fmnote" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -620,19 +672,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -675,13 +714,6 @@
       </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -701,6 +733,13 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="org.ngnono.fmnote" type="Python.DjangoServer" factoryName="Django server">
@@ -785,8 +824,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6711004" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19861111" sideWeight="0.62756956" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37243047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -886,7 +925,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/apps/category/views.py</url>
-          <line>45</line>
+          <line>50</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -896,133 +935,202 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/apps/category/views.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="13" />
+          <line>66</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/apps/category/views.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="15" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/category/urls.py">
+    <entry file="file:///Library/Python/2.7/site-packages/django/contrib/contenttypes/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#93#135#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/conf/urls/__init__.py">
+    <entry file="file:///Library/Python/2.7/site-packages/django/contrib/contenttypes/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/django/contrib/contenttypes/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/django/contrib/contenttypes/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/tag/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/bill/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="232" selection-end="806" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/test/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings/local/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="959" selection-end="959" vertical-scroll-proportion="0.673774">
+        <state line="22" column="65" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/test/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/pip-delete-this-directory.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings/local/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="0" selection-start="4038" selection-end="4038" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/utils/importlib.py">
+    <entry file="file://$PROJECT_DIR$/apps/account/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.7100213">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/core/urlresolvers.py">
+    <entry file="file://$PROJECT_DIR$/apps/bill/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="318" column="0" selection-start="12256" selection-end="12256" vertical-scroll-proportion="0.33333334">
+        <state line="19" column="22" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/views/decorators/csrf.py">
+    <entry file="file://$PROJECT_DIR$/apps/common/wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2684" selection-end="2684" vertical-scroll-proportion="0.673774">
+        <state line="32" column="28" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/base.py">
+    <entry file="file://$PROJECT_DIR$/apps/account/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="0" selection-start="8646" selection-end="8646" vertical-scroll-proportion="0.31578946">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/db/models/fields/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="394" column="0" selection-start="15399" selection-end="15399" vertical-scroll-proportion="0.31556502">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/db/models/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="361" column="0" selection-start="15950" selection-end="15950" vertical-scroll-proportion="0.31578946">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea12/python_stubs/596071422/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1974" column="8" selection-start="66117" selection-end="66117" vertical-scroll-proportion="0.33206832">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/forms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="41" selection-start="10679" selection-end="10679" vertical-scroll-proportion="0.39688715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/forms/widgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="8" selection-start="7169" selection-end="7169" vertical-scroll-proportion="0.33268481">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/category/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="38" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0">
+        <state line="11" column="9" selection-start="205" selection-end="205" vertical-scroll-proportion="0.23404256">
           <folding>
-            <element signature="e#23#70#0" expanded="true" />
+            <element signature="e#23#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="40" selection-start="9977" selection-end="9977" vertical-scroll-proportion="0.69649804">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/web4mobile/category/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/category/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="8" selection-start="693" selection-end="693" vertical-scroll-proportion="0.83870965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Django</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 2.7.2 (/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Python 2.7.2 (/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>org.ngnono.fmnote</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Python 2.7.2 (/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.1675" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

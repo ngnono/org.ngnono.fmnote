@@ -19,6 +19,8 @@ urlpatterns = patterns('',
                        url(r'^account/', include('apps.account.urls')),
                        url(r'^category/', include('apps.category.urls')),
                        #url(r'^tag/', include('apps.tag.urls')),
-                       url(r'^api/', include('rest_framework.urls', namespace='rest_framework'))
+                       url(r'^api/', include('rest_framework.urls', namespace='rest_framework')),
+                       url(r'^test/', include('apps.test.urls')),
+
 )
 

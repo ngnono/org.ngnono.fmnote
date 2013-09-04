@@ -97,6 +97,11 @@ TEMPLATE_LOADERS = (
     #     'django.template.loaders.eggs.Loader',
 )
 
+
+#csrf
+
+CSRF_COOKIE_NAME = 'csrftoken'
+
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -105,7 +110,12 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'apps.common.middlewares.debugMiddleware.DebugMiddleware'
 )
+
+if DEBUG:
+    MIDDLEWARE_CLASSES = list(MIDDLEWARE_CLASSES)
+    MIDDLEWARE_CLASSES.append('apps.common.middlewares.debugMiddleware.DebugMiddleware')
 
 ROOT_URLCONF = 'settings.local.urls'
 
@@ -118,13 +128,13 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    # 'django.contrib.sites',
-    # 'django.contrib.messages',
+    'django.contrib.sites',
+    'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    #'django.contrib.admindocs',
     'apps.bill',
     'apps.common',
     'apps.resource',

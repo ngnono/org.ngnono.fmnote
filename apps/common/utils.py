@@ -24,3 +24,11 @@ def isNoneOrEmpty(s):
     return False
 
 
+def kw_dict(**kwargs):
+    """
+    创建字典
+    """
+    return kwargs
+
+
+

@@ -15,16 +15,16 @@ class CategoryForm(forms.ModelForm):
         super(CategoryForm, self).__init__(*args, **kwargs)
 
     def clean_Name(self):
-        Name = str(self.cleaned_data["name"])
+        Name = self.cleaned_data["Name"]
 
         if Name.startswith('a'):
             raise forms.ValidationError(" baohan ale ")
 
         if isNoneOrEmpty(Name):
-            raise forms.ValidationError("名称不能为空（大写）")
+            raise forms.ValidationError("名称不能为空.")
 
         return Name
-
-    def clean(self):
-
+    #
+    # def clean(self):
+    #     pass
 

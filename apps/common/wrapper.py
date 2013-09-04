@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
-from django.http import request
-from django.views.decorators.csrf import csrf_exempt
+from django.middleware.csrf import _get_new_csrf_key
 
 __author__ = 'ngnono'
 
@@ -12,17 +11,35 @@ class httpMethod(object):
     DELETE = 4
 
 
-class httpMethodException(Exception):
-    pass
+class HttpMethodException(Exception):
+    def __init__(self, msg):
+        Exception.__init__(self)
+        self.message = msg
+
+
+class CsrfWrapperException(Exception):
+    def __init__(self, msg):
+        self.message = msg
 
 
 def http_post(func):
-    def wrapper(*args, **kwargs):
-        if request.method == "POST":
-            ret = func(*args, **kwargs)
+    def wrapper(request, *args, **kwargs):
+        if request.method == httpMethod.POST:
+            ret = func(request, *args, **kwargs)
             return ret
         else:
-            raise httpMethodException
+            raise HttpMethodException(u"只接受post方法")
+
+    return wrapper
+
+
+def http_get(func):
+    def wrapper(request, *args, **kwargs):
+        if request.method == httpMethod.GET:
+            ret = func(request, *args, **kwargs)
+            return ret
+        else:
+            raise HttpMethodException(u"只接受GET方法")
 
     return wrapper
 
@@ -30,14 +47,14 @@ def http_post(func):
 def http_method(httpMethod):
     """
 
-    :param httpMethod:  httpMethod
+    :param httpMethod:  GET POST
     :return: :raise:
     """
 
     def _http_method(func):
-        def wrapper(*args, **kwargs):
+        def wrapper(request, *args, **kwargs):
             if request.method == httpMethod:
-                ret = func(*args, **kwargs)
+                ret = func(request, *args, **kwargs)
 
                 return ret
             else:
@@ -46,3 +63,32 @@ def http_method(httpMethod):
         return wrapper
 
     return _http_method
+
+
+def csrfWrapper(func):
+    """
+    csrf dj middleware help method
+    need add attribute on the methods
+    need add params csrf_token in view method params
+
+    e:
+    @csrfWrapper
+    def create_get(request, csrf_token ):
+
+    """
+
+    def wrapper(request, *args, **kwargs):
+        if request.method == "GET":
+            csrf_token = _get_new_csrf_key()
+            request.csrf_processing_done = False
+            request.META['CSRF_COOKIE'] = csrf_token
+            request.META['CSRF_COOKIE_USED'] = True
+            kwargs["csrf_token"] = csrf_token
+
+            ret = func(request, *args, **kwargs)
+
+            return ret
+        else:
+            raise CsrfWrapperException("csrf 只能装饰在GET方法上")
+
+    return wrapper
